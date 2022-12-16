@@ -1,10 +1,17 @@
 var currDate = $('#currentDay');
 var description = $(".description");
 var hourx = "";
-var textBox = localStorage.getItem($(".time-block").attr("id"));
+var textBox= "";
 var plan = "";
+var retrieve="";
 
 currDate.text(new Date());
+localStorage.getItem(hourx,plan);
+$(function(){
+  for (i=9;i<17;i++){
+    textBox = localStorage.getItem($(".time-block").attr("id"));
+  }
+})
 
 $(function (){
 
